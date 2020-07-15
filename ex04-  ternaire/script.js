@@ -1,12 +1,11 @@
 "use strict"
+
+
 const answer = confirm(`Etes-vous majeur? Tapez votre âge.`)
 console.log(answer)
-let message
-if (answer === true) {
-    message = "Bienvenue !"
-} else {
-    message = `Vous n'êtes pas autorisé à vous connectez !`
-}
+let message = answer ? "Bienvenue !" : "Vous n'avez pas l'authorisation"
+
+
 console.log(message)
 alert(message)
 /* demander confirmation 'Confirmez-vous d'être majeur ?' 

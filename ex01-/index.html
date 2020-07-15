@@ -9,12 +9,28 @@
     <h1>Bonjour JavaScript 01</h1>
     <a href="/">retour</a>
     <script>
-      // active mode script
+      "use strict"
+
       // déclare la variable message et affecte lui la valeur "Hello !"
+
+      let message = "Hello!"
+
       // affiche le message
+
+      alert(message)
+      
       // déclare la variable name et affecte lui la valeur d'etrée utilisateur, qui répond à la question 'Comment tu t'appelles ?'
+      const question = "Comment t'appelles-tu?"
+      const name = prompt(question)
+
       // personnalise le message en y ajoutant le nom d'utilisateur
+
+      message = `Hello ${name} !`
+
       // affiche le message
+      
+      alert(message)
+      
     </script>
   </body>
 </html>
